@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Water pistol upgrade
   description: Improve the fire power of your water pistol to an attack strength
-    of 3. Note this Item is an upgrade. It will not appear in you backpack and cannot
-    be sold back to the shop
+    of 3.  Note this item is an upgrade. It will not appear in your backpack and
+    cannot be sold back to the shop
   quantity: 1
   itemSprite: {fileID: 21300000, guid: 75b659a59d3dfad45b1697e660887618, type: 3}
   itemUpgrade: {fileID: 0}
-  itemType: 1
-  price: 1
+  itemType: 2
+  price: 45

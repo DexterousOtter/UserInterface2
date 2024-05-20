@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: BackpackUpgradeItem
   m_EditorClassIdentifier: 
   itemName: Backpack upgrade
-  description: Increase Backpack size to 20 slots. Note this Item is an upgrade.
-    It will not appear in you backpack and cannot be sold back to the shop
+  description: Increase Backpack size to 8 slots.  Note this item is an upgrade.
+    It will not appear in your backpack and cannot be sold back to the shop
   quantity: 1
   itemSprite: {fileID: 21300000, guid: 0dbff4f8c54c52b4087f05752b8c0e90, type: 3}
   itemUpgrade: {fileID: 0}
-  itemType: 1
-  price: 49
+  itemType: 2
+  price: 60

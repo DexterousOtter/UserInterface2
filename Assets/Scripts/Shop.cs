@@ -8,14 +8,20 @@ public class Shop : Inventory
 
     public void SellItem(Item item, int slotIndex)
     {
-        if (item.itemType == Item.ItemType.Normal)
+        if (item.itemType == Item.ItemType.Normal || item.itemType == Item.ItemType.UpgradeableItem || item.itemType == Item.ItemType.Unique)
         {
-            inventoryManagerScript.MoveItemFromShopToBackpack(item, slotIndex);
+           bool itemTransfered = inventoryManagerScript.MoveItemFromShopToBackpack(item, slotIndex);
+            if(item.itemType == Item.ItemType.UpgradeableItem && itemTransfered)
+            {
+                item.RunItemBoughtAction(item);
+            }
         }
-        else
+        else if (item.itemType == Item.ItemType.Upgrade)
         {
-            Remove(item, slotIndex, 1);
-            item.RunItemBoughtAction(item);
+            if(item.RunItemBoughtAction(item))
+            {
+                Remove(item, slotIndex, 1);
+            }
 
         }
     }
@@ -35,5 +41,7 @@ public class Shop : Inventory
         }
 
     }
-
+    private void Start() {
+        isOrganizable = false;
+    }
 }

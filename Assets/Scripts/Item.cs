@@ -7,6 +7,7 @@ public class Item : ScriptableObject
     public enum ItemType
     {
         Normal,
+        Unique,
         Upgrade,
         UpgradeableItem
     }
@@ -34,21 +35,35 @@ public class Item : ScriptableObject
         return clone;
     }
 
-    public void RunItemBoughtAction(Item item) {
+    public bool RunItemBoughtAction(Item item) {
         if(itemType == ItemType.UpgradeableItem) {
             InventoryManagerScript inventoryManagerScript = GameObject.Find("Content").GetComponent<InventoryManagerScript>();
             inventoryManagerScript.shop.Add(item.itemUpgrade);
+            return true;
         
         } else if(itemType == ItemType.Upgrade) {
             if(item.itemName == "Chest upgrade") {
                 InventoryManagerScript inventoryManagerScript = GameObject.Find("Content").GetComponent<InventoryManagerScript>();
+                if(inventoryManagerScript.playerMoney - item.price < 0) {
+                    return false;
+                }
                 inventoryManagerScript.chest.IncreaseSize(int.MaxValue);
+                inventoryManagerScript.playerMoney -= item.price;
+                inventoryManagerScript.moneyText.text = "x " + inventoryManagerScript.playerMoney;
+
 
             } else if(item.itemName == "Backpack upgrade") {
                 InventoryManagerScript inventoryManagerScript = GameObject.Find("Content").GetComponent<InventoryManagerScript>();
-                inventoryManagerScript.backpack.IncreaseSize(20);
+                if(inventoryManagerScript.playerMoney - item.price < 0) {
+                    return false;
+                }
+                inventoryManagerScript.backpack.IncreaseSize(8);
+                inventoryManagerScript.playerMoney -= item.price;
+                inventoryManagerScript.moneyText.text = "x " + inventoryManagerScript.playerMoney;
 
             }
+            return true;
         }
+        return true;
     }
 }

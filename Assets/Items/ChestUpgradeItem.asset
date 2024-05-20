@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: ChestUpgradeItem
   m_EditorClassIdentifier: 
   itemName: Chest upgrade
-  description: Incease the size of your chest to hold an infite amount of items.
-    Note this Item is an upgrade. It will not appear in you backpack and cannot be
-    sold back to the shop
+  description: Incease the size of your chest to hold an infite amount of items. 
+    Note this item is an upgrade. It will not appear in your backpack and cannot
+    be sold back to the shop
   quantity: 1
   itemSprite: {fileID: 21300000, guid: 27c2c7ea094457b48bf4c84ee226b91d, type: 3}
   itemUpgrade: {fileID: 0}
-  itemType: 1
-  price: 50
+  itemType: 2
+  price: 80

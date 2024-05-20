@@ -13,6 +13,8 @@ public abstract class Inventory : MonoBehaviour
     private int itemBeingDraggedSlotIndex;
     private Item itemBeingDragged;
 
+    protected bool isOrganizable = true;
+
     public int Add(Item item)
     {
 
@@ -129,7 +131,7 @@ public abstract class Inventory : MonoBehaviour
     }
     public void OnDropHandler(Item item, int slotIndex)
     {
-
+        if(!isOrganizable) return;
         ItemSlot draggedItemSlot = itemSlots.Find((x) => x.slotIndex == itemBeingDraggedSlotIndex);
         ItemSlot targetItemSlot = itemSlots.Find((x) => x.slotIndex == slotIndex);
         if (draggedItemSlot != null && targetItemSlot != null)

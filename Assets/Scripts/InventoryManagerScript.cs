@@ -8,7 +8,7 @@ public class InventoryManagerScript : MonoBehaviour
     public Chest chest;
     public Item[] allItems;
 
-    private int playerMoney = 100;
+    public int playerMoney = 100;
 
     public TextMeshProUGUI moneyText;
     public void Start()

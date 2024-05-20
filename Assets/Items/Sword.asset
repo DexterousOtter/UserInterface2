@@ -17,5 +17,5 @@ MonoBehaviour:
   quantity: 1
   itemSprite: {fileID: 21300000, guid: baced6c1d584fda43af973bc7ac577ce, type: 3}
   itemUpgrade: {fileID: 11400000, guid: 35e26ce7b810f1d4ca55880e8365e2dc, type: 2}
-  itemType: 2
-  price: 1
+  itemType: 3
+  price: 20

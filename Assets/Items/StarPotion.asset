@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb00b00c3517414695a491e09dac48f, type: 3}
   m_Name: StarPotion
   m_EditorClassIdentifier: 
-  itemName: Mana potion
-  description: Increases your mana bar by 10
+  itemName: Invisibility potion
+  description: Makes character invulnerable to damage for 30 seconds
   quantity: 10
   itemSprite: {fileID: 21300000, guid: 8885bda4924db9047b7d781d38c7af1b, type: 3}
+  itemUpgrade: {fileID: 0}
+  itemType: 0
+  price: 50

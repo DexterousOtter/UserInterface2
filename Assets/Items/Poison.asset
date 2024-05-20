@@ -16,3 +16,6 @@ MonoBehaviour:
   description: Slows your opponents down
   quantity: 10
   itemSprite: {fileID: 21300000, guid: 9f17bd970232bd44f9bf67018f5edbca, type: 3}
+  itemUpgrade: {fileID: 0}
+  itemType: 0
+  price: 20

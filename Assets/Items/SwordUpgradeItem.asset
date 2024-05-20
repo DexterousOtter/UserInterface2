@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: SwordUpgradeItem
   m_EditorClassIdentifier: 
   itemName: Sword upgrade
-  description: increases the attack strength of your sword to 2. Note this Item is
-    an upgrade. It will not appear in you backpack and cannot be sold back to the
+  description: increases the attack strength of your sword to 2. Note this item is
+    an upgrade. It will not appear in your backpack and cannot be sold back to the
     shop
-  quantity: 0
+  quantity: 1
   itemSprite: {fileID: 21300000, guid: da0ceba97e75cd3409384f76e1ba79f3, type: 3}
   itemUpgrade: {fileID: 0}
-  itemType: 1
-  price: 1
+  itemType: 2
+  price: 30

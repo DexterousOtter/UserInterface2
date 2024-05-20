@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb00b00c3517414695a491e09dac48f, type: 3}
   m_Name: Tube
   m_EditorClassIdentifier: 
-  itemName: Tube
-  description: adsfasdf
+  itemName: Speed exilir
+  description: Increases character speed for 30 seconds
   quantity: 10
   itemSprite: {fileID: 21300000, guid: 5513de84794706e4092b6fd90252b928, type: 3}
+  itemUpgrade: {fileID: 0}
+  itemType: 0
+  price: 50

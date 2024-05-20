@@ -16,3 +16,6 @@ MonoBehaviour:
   description: Increases your health by +5hp
   quantity: 10
   itemSprite: {fileID: 21300000, guid: a6e8238c93f20fa489f7921e725e4459, type: 3}
+  itemUpgrade: {fileID: 0}
+  itemType: 0
+  price: 10
