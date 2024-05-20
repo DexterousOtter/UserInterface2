@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb00b00c3517414695a491e09dac48f, type: 3}
+  m_Name: BackpackUpgradeItem
+  m_EditorClassIdentifier: 
+  itemName: Backpack upgrade
+  description: Increase Backpack size to 20 slots. Note this Item is an upgrade.
+    It will not appear in you backpack and cannot be sold back to the shop
+  quantity: 1
+  itemSprite: {fileID: 21300000, guid: 0dbff4f8c54c52b4087f05752b8c0e90, type: 3}
+  itemUpgrade: {fileID: 0}
+  itemType: 1
+  price: 49

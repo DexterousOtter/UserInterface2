@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb00b00c3517414695a491e09dac48f, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  itemName: Wooden sword
+  description: Weapon with an attack strength of 1
+  quantity: 1
+  itemSprite: {fileID: 21300000, guid: baced6c1d584fda43af973bc7ac577ce, type: 3}
+  itemUpgrade: {fileID: 11400000, guid: 35e26ce7b810f1d4ca55880e8365e2dc, type: 2}
+  itemType: 2
+  price: 1
